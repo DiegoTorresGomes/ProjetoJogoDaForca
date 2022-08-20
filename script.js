@@ -194,11 +194,11 @@ const palavras = [
         nome: "LUVA",
         categoria: "ROUPAS"
     },
-    palavra029={
+    palavra049={
         nome: "SOFÁ",
         categoria: "OBJETOS"
     },
-    palavra030={
+    palavra050={
         nome: "ALMOFADA",
         categoria: "OBJETOS"
     },
