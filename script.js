@@ -162,6 +162,46 @@ const palavras = [
         nome: "JAGUATIRICA",
         categoria: "ANIMAIS"
     },
+    palavra041={
+        nome: "TELEVISÃO",
+        categoria: "OBJETOS"
+    },
+    palavra042={
+        nome: "CALÇA",
+        categoria: "ROUPAS"
+    },
+    palavra043={
+        nome: "BLUSA",
+        categoria: "ROUPAS"
+    },
+    palavra044={
+        nome: "JAQUETA",
+        categoria: "ROUPAS"
+    },
+    palavra045={
+        nome: "CAMISETA",
+        categoria: "ROUPAS"
+    },
+    palavra046={
+        nome: "MEIA",
+        categoria: "ROUPAS"
+    },
+    palavra047={
+        nome: "SHORT",
+        categoria: "ROUPAS"
+    },
+    palavra048={
+        nome: "LUVA",
+        categoria: "ROUPAS"
+    },
+    palavra029={
+        nome: "SOFÁ",
+        categoria: "OBJETOS"
+    },
+    palavra030={
+        nome: "ALMOFADA",
+        categoria: "OBJETOS"
+    },
 ];
 
 function criarPalavraSecreta () {
