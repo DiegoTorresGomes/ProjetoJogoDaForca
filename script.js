@@ -227,9 +227,6 @@ const palavras = [
 function criarPalavraSecreta () {
     const indexPalavra = parseInt(Math.random () * palavras.length);
     
-    
-    
-    
     palavraSecretaSorteada = palavras[indexPalavra].nome;
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
 
