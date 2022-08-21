@@ -202,6 +202,26 @@ const palavras = [
         nome: "ALMOFADA",
         categoria: "OBJETOS"
     },
+    palavra051={
+        nome: "SINGAPURA",
+        categoria: "LUGARES"
+    },
+    palavra052={
+        nome: "ZIMBÁBEE",
+        categoria: "LUGARES"
+    },
+    palavra053={
+        nome: "AMSTERDÃ",
+        categoria: "LUGARES"
+    },
+    palavra054={
+        nome: "COLÔMBIA",
+        categoria: "LUGARES"
+    },
+    palavra055={
+        nome: "SENEGAL",
+        categoria: "LUGARES"
+    },
 ];
 
 function criarPalavraSecreta () {
