@@ -10,7 +10,7 @@ body{
     width: 100vw;
     height: 90vh;
     margin-top: 10px;
-    background-color: bisque;
+    background-color: black;
     font-family: sans-serif;
 }
 
@@ -22,6 +22,7 @@ body{
     flex-direction: column;
 }
 
+
 #imagem{
     background-image: url(./Assets/forca.png);
     width: 234px;
@@ -29,6 +30,7 @@ body{
     background-repeat: no-repeat;
     
 }
+
 
 #palavra-secreta{
     display: flex;
