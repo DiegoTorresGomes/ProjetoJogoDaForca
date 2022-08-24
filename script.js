@@ -259,9 +259,13 @@ function montarPalavraNaTela () {
 }
 
 function verificaLetraEscolhida (letra){
+    document.getElementById("tecla-" + letra).disabled = true;
     if(tentativas > 0)
     {
         mudarStyleLetra ("tecla-" + letra);
+        comparaListas(letra);
+        montarPalavraNaTela();
+
     }
     
 }
@@ -270,3 +274,87 @@ function mudarStyleLetra (tecla) {
     document.getElementById(tecla).style.background = "black";
     document.getElementById(tecla).style.color = "#ffffff";
 }
+
+function comparaListas(letra) {
+    const pos = palavraSecretaSorteada.indexOf(letra)
+    if(pos < 0){
+        tentativas--
+        carregaImagemForca();
+
+        if(tentativas == 0)
+        {
+            abreModal("OPS!", "Não foi desta vez... A palavra secreta era <br>" + palavraSecretaSorteada);
+        }
+        
+    }
+    else{
+        for(i = 0; i < palavraSecretaSorteada.length; i++)
+        {
+            if (palavraSecretaSorteada [i] == letra) {
+                listaDinamica[i] = letra;
+            }
+        }
+    }
+
+    let vitoria = true;
+    for(i = 0; i < palavraSecretaSorteada.length; i++){
+        if (palavraSecretaSorteada [i] != listaDinamica[i]){
+            vitoria = false;
+        }
+    }
+
+    if(vitoria == true)
+    {
+        abreModal("PARABÉNS!!!!", "VOCÊ É O CAMPEÃO!!!!");
+        tentativas = 0;
+    }
+
+
+
+}
+
+function carregaImagemForca() {
+    switch(tentativas){
+        case 5:
+            document.getElementById("imagem").style.background = "url('./Assets/forca01.png')";
+            break;
+        case 4:
+            document.getElementById("imagem").style.background = "url('./Assets/forca02.png')";
+            break;
+        case 3:
+            document.getElementById("imagem").style.background = "url('./Assets/forca03.png')";
+            break;
+        case 2:
+            document.getElementById("imagem").style.background = "url('./Assets/forca04.png')";
+            break;
+        case 1:
+            document.getElementById("imagem").style.background = "url('./Assets/forca05.png')";
+            break;
+        case 0:
+            document.getElementById("imagem").style.background = "url('./Assets/forca06.png')";
+            break;
+
+        default:
+            document.getElementById("imagem").style.background = "url('./Assets/forca.png')";
+            break;
+    }
+}
+
+
+function abreModal(titulo, mensagem) {
+    let modalTitulo = document.getElementById("exampleModalLabel");
+    modalTitulo.innerText = titulo;
+
+    let modalBody = document.getElementById("modalBody");
+    modalBody.innerHTML = mensagem;
+
+
+    $("#myModal").modal({
+        show: true
+    });
+}
+
+let bntReiniciar = document.querySelector("#btnReiniciar") //quando é seletor, precisamos colocar o #
+bntReiniciar.addEventListener("click", function() {
+    location.reload(); // este evento vai atualizar a página
+});
