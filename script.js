@@ -224,6 +224,32 @@ const palavras = [
         nome: "SENEGAL",
         categoria: "LUGARES"
     },
+    palavra056={
+        nome: "ANJOS DA LEI",
+        categoria: "FILMES"
+    },
+    palavra057={
+        nome: "GAME OF THRONES",
+        categoria: "SÉRIES"
+    },
+    palavra058={
+        nome: "TOP GUN",
+        categoria: "FILMES"
+    },
+    palavra059={
+        nome: "JOGOS VORAZES",
+        categoria: "FILMES"
+    },
+    palavra060={
+        nome: "BREAKING BAD",
+        categoria: "SÉRIES"
+    },
+
+
+
+
+
+
 ];
 
 criarPalavraSecreta();
@@ -248,11 +274,23 @@ function montarPalavraNaTela () {
 
     for(i = 0; i < palavraSecretaSorteada.length; i++) {
         if (listaDinamica [i] == undefined) {
-            listaDinamica[i] = "&nbsp;"
-            palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
+                if(palavraSecretaSorteada[i] == " "){
+                    listaDinamica[i] = " ";
+                    palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letrasEspaco'>" + listaDinamica[i] + "</div>"
+                }
+                else{
+                    listaDinamica[i] = "&nbsp;"
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
+                }
         }
         else{
-            palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
+            if(palavraSecretaSorteada[i] == " "){
+                listaDinamica[i] = " ";
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letrasEspaco'>" + listaDinamica[i] + "</div>"
+            }
+            else{
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
+            }
         }
     }
 
