@@ -9,7 +9,7 @@ const palavras = [
         categoria: "LUGARES"
     },
     palavra002={
-        nome: "INDONÉSIA",
+        nome: "INDONESIA",
         categoria: "LUGARES"
     },
     palavra003={
@@ -17,7 +17,7 @@ const palavras = [
         categoria: "LUGARES"
     },
     palavra004={
-        nome: "AFEGANISTÃO",
+        nome: "AFEGANISTAO",
         categoria: "LUGARES"
     },
     palavra005={
@@ -29,15 +29,15 @@ const palavras = [
         categoria: "TRANSPORTE"
     },
     palavra007={
-        nome: "METRÔ",
+        nome: "METRO",
         categoria: "TRANSPORTE"
     },
     palavra008={
-        nome: "ÔNIBUS",
+        nome: "ONIBUS",
         categoria: "TRANSPORTE"
     },
     palavra009={
-        nome: "TÁXI",
+        nome: "TAXI",
         categoria: "TRANSPORTE"
     },
     palavra010={
@@ -45,7 +45,7 @@ const palavras = [
         categoria: "TRANSPORTE"
     },
     palavra011={
-        nome: "MAMÃO",
+        nome: "MAMAO",
         categoria: "ALIMENTOS"
     },
     palavra012={
@@ -53,7 +53,7 @@ const palavras = [
         categoria: "ALIMENTOS"
     },
     palavra013={
-        nome: "MAÇÃ",
+        nome: "PERA",
         categoria: "ALIMENTOS"
     },
     palavra014={
@@ -61,11 +61,11 @@ const palavras = [
         categoria: "ALIMENTOS"
     },
     palavra015={
-        nome: "MELÃO",
+        nome: "MELAO",
         categoria: "ALIMENTOS"
     },
     palavra016={
-        nome: "MARACUJÁ",
+        nome: "MARACUJA",
         categoria: "ALIMENTOS"
     },
      palavra017={
@@ -73,7 +73,7 @@ const palavras = [
         categoria: "ALIMENTOS"
     },
     palavra018={
-        nome: "JAMELÃO",
+        nome: "JAMELAO",
         categoria: "ALIMENTOS"
     },
     palavra019={
@@ -141,7 +141,7 @@ const palavras = [
         categoria: "ANIMAIS"
     },
     palavra035={
-        nome: "JACARÉ",
+        nome: "JACARE",
         categoria: "ANIMAIS"
     },
     palavra036={
@@ -165,11 +165,11 @@ const palavras = [
         categoria: "ANIMAIS"
     },
     palavra041={
-        nome: "TELEVISÃO",
+        nome: "TELEVISAO",
         categoria: "OBJETOS"
     },
     palavra042={
-        nome: "CALÇA",
+        nome: "CALCA",
         categoria: "ROUPAS"
     },
     palavra043={
@@ -197,7 +197,7 @@ const palavras = [
         categoria: "ROUPAS"
     },
     palavra049={
-        nome: "SOFÁ",
+        nome: "SOFA",
         categoria: "OBJETOS"
     },
     palavra050={
@@ -209,15 +209,15 @@ const palavras = [
         categoria: "LUGARES"
     },
     palavra052={
-        nome: "ZIMBÁBEE",
+        nome: "ZIMBABUE",
         categoria: "LUGARES"
     },
     palavra053={
-        nome: "AMSTERDÃ",
+        nome: "AMSTERDA",
         categoria: "LUGARES"
     },
     palavra054={
-        nome: "COLÔMBIA",
+        nome: "COLOMBIA",
         categoria: "LUGARES"
     },
     palavra055={
